@@ -1,37 +1,43 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/2-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/2-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/2-footer.css">
-    <title>Airbnb</title>
+    <title>Header and Footer Example</title>
+    <link rel="stylesheet" href="styles/2-common.css">
+    <link rel="stylesheet" href="styles/2-header.css">
+    <link rel="stylesheet" href="styles/2-footer.css">
   </head>
   <body>
-    <header>
-    </header>
-    <footer>
-      Holberton School
-    </footer>
+    <header></header>
+    <footer><span>Best School</span></footer>
   </body>
 </html>
-=======
+
+styles/2-common.css
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/2-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/2-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/2-footer.css">
-    <title>Airbnb</title>
-  </head>
-  <body>
-    <header>
-    </header>
-    <footer>
-      Holberton School
-    </footer>
-  </body>
-</html>
->>>>>>> 0fcf709cac02cd9b47be8688d3b837c11c044ec5
+body {
+  margin: 0;
+  padding: 0;
+}
+
+styles/2-header.css
+header {
+  background-color: #FF0000;
+  height: 70px;
+  width: 100%;
+}
+
+styles/2-footer.css
+footer {
+  background-color: #00FF00;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer span {
+  text-align: center;
+}
