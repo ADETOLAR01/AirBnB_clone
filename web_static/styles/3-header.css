@@ -1,20 +1,27 @@
-<<<<<<< HEAD
 header {
-    background-color: white;
-    height: 70px;
-    width: 100%;
-    border-bottom: 1px solid #CCCCCC;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-position: 20px 50%;
-=======
-header {
-    background-color: white;
-    height: 70px;
-    width: 100%;
-    border-bottom: 1px solid #CCCCCC;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-position: 20px 50%;
->>>>>>> 0fcf709cac02cd9b47be8688d3b837c11c044ec5
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #484848;
+  font-weight: bold;
 }
