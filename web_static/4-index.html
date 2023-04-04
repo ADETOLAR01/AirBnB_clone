@@ -1,23 +1,33 @@
-html
+<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="styles/4-common.css">
   <link rel="stylesheet" href="styles/3-header.css">
   <link rel="stylesheet" href="styles/3-footer.css">
   <link rel="stylesheet" href="styles/4-filters.css">
-  <link rel="icon" href="images/icon.png">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="logo">
+    <div class="header-container">
+      <div class="logo">
+        <a href="#">Logo</a>
+      </div>
+    </div>
   </header>
+  
   <div class="container">
     <section class="filters">
-      <button>Search</button>
+      <button class="search-button">Search</button>
     </section>
   </div>
+  
   <footer>
-    <p>Best School</p>
+    <div class="footer-container">
+      <p>Best School</p>
+    </div>
   </footer>
 </body>
 </html>
