@@ -25,3 +25,12 @@ nav a {
   color: #484848;
   font-weight: bold;
 }
+
+header {
+  background-color: #FF0000;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
