@@ -1,39 +1,68 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
+index.html:
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/3-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-    <link rel="icon" type="image/png" href="./images/icon.png">
-    <title>Airbnb</title>
+    <title>Header and Footer Example</title>
+    <link rel="stylesheet" href="styles/3-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   </head>
   <body>
     <header>
+      <div class="logo"></div>
     </header>
-    <footer>
-      Holberton School
-    </footer>
+    <footer><span>Best School</span></footer>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/3-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-    <link rel="icon" type="image/png" href="./images/icon.png">
-    <title>Airbnb</title>
-  </head>
-  <body>
-    <header>
-    </header>
-    <footer>
-      Holberton School
-    </footer>
-  </body>
-</html>
->>>>>>> 0fcf709cac02cd9b47be8688d3b837c11c044ec5
+
+styles/3-common.css:
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #484848;
+}
+
+header, footer {
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.logo {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 20px center;
+  height: 70px;
+  width: 150px;
+}
+
+styles/3-header.css
+header {
+  background-color: #FF0000;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+styles/3-footer.css
+footer {
+  background-color: #00FF00;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer span {
+  text-align: center;
+  color: white;
+}
