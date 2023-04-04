@@ -1,181 +1,79 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-    <link rel="stylesheet" type="text/css" href="styles/8-places.css">
-    <link rel="icon" type="image/png" href="./images/icon.png">
-    <link rel="icon" type="image/png" href="./images/icon_group.png">
-    <link rel="icon" type="image/png" href="./images/icon_bed.png">
-    <link rel="icon" type="image/png" href="./images/icon_bath.png">
-    <title>Airbnb</title>
-  </head>
-  <body>
-    <header>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Search Results</title>
+  <link rel="stylesheet" type="text/css" href="styles/4-common.css">
+  <link rel="stylesheet" type="text/css" href="styles/3-header.css">
+  <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
+  <link rel="stylesheet" type="text/css" href="styles/8-places.css">
+</head>
+<body>
+  <header>
     <div class="container">
-      <section class="filters">
-	<div class="locations">
-	  <h3>States</h3>
-          <h4>California, Arizona...</h4>
-          <ul class="popover">
-            <li><h2>Arizona:</h2>
-              <ul>
-                <li>Page</li>
-                <li>Page2</li>
-              </ul>
-            </li>
-            <li><h2>California:</h2>
-              <ul>
-                <li>San Francisco</li>
-                <li> Los Altos</li>
-              </ul>
-          </ul>
-        </div>
-        <div class="amenities">
-          <h3>Amenities</h3>
-          <h4>Internet, Kitchen...</h4>
-          <ul class="popover">
-            <li>Internet</li>
-            <li>TV<li>
-            <li>Kitchen</li>
-            <li>Iron</li>
-          </ul>
-        </div>
-	<button>Search</button>
-      </section>
-      <section class="places">
-	<h1>Places</h1>
-        <article>
-          <h2>My home</h2>
-          <div class="price_by_night">$80</div>
-          <div class="information">
-            <div class="max_guest">2 guests</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">1 bathroom</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Longye Chen</div>
-          <div class="description">This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2 people. It is located at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, and 3 stops to Jingan Temple.</div>
-	</article>
-        <article><h2>Tiny house</h2>
-          <div class="price_by_night">$50</div>
-          <div class="information">
-            <div class="max_guest">1 guest</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">1 bathroom</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Mel X</div>
-          <div class="description">This is a tiny, tight, and cozy getaway. Affordable and not too shabby. Perfect for those on a budget.</div>
-        </article>
-        <article><h2>A suite</h2>
-          <div class="price_by_night">$160</div>
-          <div class="information">
-            <div class="max_guest">2 guests</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">2 bathrooms</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Christina Chiu</div>
-          <div class="description">Beautiful suite with balcony worthy of Romeo and Juliet's love story.</div>
-        </article>
-      </section>
+      <h1>Search Results</h1>
     </div>
-    <footer>
-      Holberton School
-    </footer>
-  </body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-    <link rel="stylesheet" type="text/css" href="styles/8-places.css">
-    <link rel="icon" type="image/png" href="./images/icon.png">
-    <link rel="icon" type="image/png" href="./images/icon_group.png">
-    <link rel="icon" type="image/png" href="./images/icon_bed.png">
-    <link rel="icon" type="image/png" href="./images/icon_bath.png">
-    <title>Airbnb</title>
-  </head>
-  <body>
-    <header>
-    </header>
+  </header>
+  <section class="container">
+    <div class="filters">
+      <h2>Filters</h2>
+      <form>
+        <label for="location">Location:</label>
+        <select id="location" name="location">
+          <option value="">Any</option>
+          <option value="new-york">New York</option>
+          <option value="los-angeles">Los Angeles</option>
+          <option value="san-francisco">San Francisco</option>
+        </select>
+        <br>
+        <label for="price">Price:</label>
+        <select id="price" name="price">
+          <option value="">Any</option>
+          <option value="100">$100</option>
+          <option value="200">$200</option>
+          <option value="300">$300</option>
+        </select>
+        <br>
+        <button type="submit">Apply</button>
+      </form>
+    </div>
+    <div class="places">
+      <article>
+        <h3>Beautiful apartment in Manhattan</h3>
+        <div class="price_by_night"> 
+          $150
+        </div>
+        <div class="information">
+          <div class="max_guest">
+            <img src="images/guests-icon.png" alt="Guests Icon">
+            <span>4 guests</span>
+          </div>
+          <div class="number_rooms">
+            <img src="images/rooms-icon.png" alt="Rooms Icon">
+            <span>2 bedrooms</span>
+          </div>
+          <div class="number_bathrooms">
+            <img src="images/bathrooms-icon.png" alt="Bathrooms Icon">
+            <span>2 bathrooms</span>
+          </div>
+        </div>
+        <div class="user">
+          <strong>Owner:</strong> John Smith
+        </div>
+        <div class="description">
+          <p>This beautiful apartment is located in the heart of Manhattan and offers stunning views of the city. With two bedrooms and two bathrooms, it is the perfect choice for a family or group of friends visiting the Big Apple.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <footer>
     <div class="container">
-      <section class="filters">
-	<div class="locations">
-	  <h3>States</h3>
-          <h4>California, Arizona...</h4>
-          <ul class="popover">
-            <li><h2>Arizona:</h2>
-              <ul>
-                <li>Page</li>
-                <li>Page2</li>
-              </ul>
-            </li>
-            <li><h2>California:</h2>
-              <ul>
-                <li>San Francisco</li>
-                <li> Los Altos</li>
-              </ul>
-          </ul>
-        </div>
-        <div class="amenities">
-          <h3>Amenities</h3>
-          <h4>Internet, Kitchen...</h4>
-          <ul class="popover">
-            <li>Internet</li>
-            <li>TV<li>
-            <li>Kitchen</li>
-            <li>Iron</li>
-          </ul>
-        </div>
-	<button>Search</button>
-      </section>
-      <section class="places">
-	<h1>Places</h1>
-        <article>
-          <h2>My home</h2>
-          <div class="price_by_night">$80</div>
-          <div class="information">
-            <div class="max_guest">2 guests</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">1 bathroom</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Longye Chen</div>
-          <div class="description">This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2 people. It is located at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, and 3 stops to Jingan Temple.</div>
-	</article>
-        <article><h2>Tiny house</h2>
-          <div class="price_by_night">$50</div>
-          <div class="information">
-            <div class="max_guest">1 guest</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">1 bathroom</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Mel X</div>
-          <div class="description">This is a tiny, tight, and cozy getaway. Affordable and not too shabby. Perfect for those on a budget.</div>
-        </article>
-        <article><h2>A suite</h2>
-          <div class="price_by_night">$160</div>
-          <div class="information">
-            <div class="max_guest">2 guests</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">2 bathrooms</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Christina Chiu</div>
-          <div class="description">Beautiful suite with balcony worthy of Romeo and Juliet's love story.</div>
-        </article>
-      </section>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </div>
-    <footer>
-      Holberton School
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>
->>>>>>> 0fcf709cac02cd9b47be8688d3b837c11c044ec5
