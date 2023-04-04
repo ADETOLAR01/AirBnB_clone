@@ -38,3 +38,19 @@ footer {
   font-weight: bold;
   font-size: 18px;
 }
+
+footer {
+  background-color: #00FF00;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer span {
+  text-align: center;
+  color: white;
+}
